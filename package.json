@@ -1,0 +1,32 @@
+{
+  "name": "pubtool4pixi",
+  "version": "2.0.0",
+  "description": "Usefultool for PIXI xes project",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src -d lib",
+    "doc":"jsdoc src"
+  },
+  "keywords": [
+    "PIXI"
+  ],
+  "dependencies": {
+    "@types/jquery": "^3.3.29",
+    "jquery": "latest"
+  },
+  "author": "NeoCN",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "jsdoc": "^3.6.10",
+    "pixi-particles": "^3.1.0",
+    "pixi-sound": "^2.0.4",
+    "pixi-spine": "^1.5.16",
+    "pixi.js": "^4.8.1"
+  }
+}

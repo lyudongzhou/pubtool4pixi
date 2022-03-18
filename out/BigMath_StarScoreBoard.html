@@ -1,0 +1,1121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Class: BigMath_StarScoreBoard</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Class: BigMath_StarScoreBoard</h1>
+
+    
+
+
+
+
+<section>
+
+<header>
+    
+        <h2><span class="attribs"><span class="type-signature"></span></span>BigMath_StarScoreBoard<span class="signature">()</span><span class="type-signature"></span></h2>
+        
+            <div class="class-description">大数学通用过关结算星星动效</div>
+        
+    
+</header>
+
+<article>
+    <div class="container-overview">
+    
+        
+
+    
+    <h2>Constructor</h2>
+    
+
+    
+    <h4 class="name" id="BigMath_StarScoreBoard"><span class="type-signature"></span>new BigMath_StarScoreBoard<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5 class="subsection-title">Properties:</h5>
+
+    
+
+<table class="props">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>topicNumber</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">游戏题目总数 - 默认值：3</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>marginDistance</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">星星间隔值 - 默认值：80</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>starBgLocation</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">背景位置 - 默认值：{x:34,y:36}</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>StarScoreBoard</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">计分板 - 默认值："image_StarScoreBoard"</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>starLocation</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">第一颗星星位置 - 默认值：{x:63,y:55}</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>bgIcon</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">默认状态的星星 - 默认值："image_starIdle"</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>loseIcon</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">失败状态的星星 - 默认值："image_starLose"</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>lightSpineName</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">成功状态的星星动效名称 - 默认值："animation_star"</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>lightAniName</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">成功状态的星星播放的动画名称 - 默认值："star_in"</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>starPathSpineName</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">星星飞的路径动效名称 - 默认值："animation_starflash"</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>starPathAniName</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">星星飞的路径播放的动画名称 - 默认值："starflash_in"</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>starSound</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">星星组件的音频配置 - 默认值:"audio_starSound"</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="easy.js.html">easy.js</a>, <a href="easy.js.html#line1272">line 1272</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>import {Easy} from "pubtool4pixi"Easy.create("BigMath_StarScoreBoard",{topicNumber : 3,marginDistance:80,starBgLocation:{  x:34,y:36},}).show();</code></pre>
+
+
+
+    
+    </div>
+
+    
+        <h3 class="subsection-title">Extends</h3>
+
+        
+
+
+    <ul>
+        <li><a href="BaseContainer.html">BaseContainer</a></li>
+    </ul>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Methods</h3>
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id=".addLoseStar"><span class="type-signature">(static) </span>addLoseStar<span class="signature">(presentTopicNumber)</span><span class="type-signature"> &rarr; {Promise}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    添加失败星星
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>presentTopicNumber</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">当前关卡的下标</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="easy.js.html">easy.js</a>, <a href="easy.js.html#line1353">line 1353</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    添加完成后
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Promise</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id=".addWinStar"><span class="type-signature">(static) </span>addWinStar<span class="signature">(presentTopicNumber)</span><span class="type-signature"> &rarr; {Promise}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    添加成功星星
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>presentTopicNumber</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">当前关卡的下标</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="easy.js.html">easy.js</a>, <a href="easy.js.html#line1336">line 1336</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    星星与路径动效播放完成
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Promise</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id=".playAudio"><span class="type-signature">(static) </span>playAudio<span class="signature">()</span><span class="type-signature"> &rarr; {Promise}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    播放星星音频
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="easy.js.html">easy.js</a>, <a href="easy.js.html#line1394">line 1394</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    音频播放完成
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Promise</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id=".reset"><span class="type-signature">(static) </span>reset<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    重置星星动效
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="easy.js.html">easy.js</a>, <a href="easy.js.html#line1367">line 1367</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id=".starPath"><span class="type-signature">(static) </span>starPath<span class="signature">()</span><span class="type-signature"> &rarr; {Promise}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    播放星星路径动效
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="easy.js.html">easy.js</a>, <a href="easy.js.html#line1377">line 1377</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    路径动效播放完成
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Promise</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+
+        
+    
+
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="Base.html">Base</a></li><li><a href="BaseContainer.html">BaseContainer</a></li><li><a href="BigMath_AniBtn.html">BigMath_AniBtn</a></li><li><a href="BigMath_GuideHand.html">BigMath_GuideHand</a></li><li><a href="BigMath_StarScoreBoard.html">BigMath_StarScoreBoard</a></li><li><a href="BigMath_Timer.html">BigMath_Timer</a></li><li><a href="HitContainer.html">HitContainer</a></li><li><a href="Preschool_aqiu.html">Preschool_aqiu</a></li><li><a href="Preschool_End.html">Preschool_End</a></li><li><a href="Preschool_HintBtn.html">Preschool_HintBtn</a></li><li><a href="Preschool_Start.html">Preschool_Start</a></li><li><a href="PUB_Mask.html">PUB_Mask</a></li></ul><h3>Events</h3><ul><li><a href="BaseContainer.html#.event:beforeHide">beforeHide</a></li><li><a href="BaseContainer.html#.event:beforeShow">beforeShow</a></li><li><a href="BaseContainer.html#.event:Destroyed">Destroyed</a></li><li><a href="BaseContainer.html#.event:onHide">onHide</a></li><li><a href="BaseContainer.html#.event:onShow">onShow</a></li><li><a href="BaseContainer.html#.event:ParentChange">ParentChange</a></li><li><a href="BigMath_AniBtn.html#.event:onClick">onClick</a></li><li><a href="BigMath_Timer.html#.event:onTimeRun">onTimeRun</a></li><li><a href="BigMath_Timer.html#.event:timeup">timeup</a></li><li><a href="Preschool_End.html#.event:gameOver">gameOver</a></li><li><a href="Preschool_Start.html#.event:startGame">startGame</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.10</a> on Fri Mar 18 2022 11:12:10 GMT+0800 (中国标准时间)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>
